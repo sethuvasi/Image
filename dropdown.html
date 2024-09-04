@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: cornflowerblue;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: aquamarine;
+        text-align: center;
+        padding: 12px 14px;
+        display: block;
+        width: 100%;
+        
+    }
+    .btn-group{
+        float: right;
+        
+        
+        
+    }
+    a{
+       background-color: bisque;
+       overflow: hidden;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Dropdown</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary">Contact</button>
+            <button type="button" class="btn btn-info">About</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">menu<span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">link1</a></li>
+                  <li><a href="#">link2</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p style="text-align: center;"><strong>ipsum dolor sit amet consectetur adipisicing elit. Saepe accusantium, possimus esse autem incidunt modi quibusdam suscipit quaerat nostrum sapiente!</strong></p>
+</body>
+</html>
